@@ -42,26 +42,26 @@ export default () => {
   ]);
 
   useEffect(() => {
-    if (!loading) {
-      setCharacterList(
-        produce(draft => {
-          draft[0].characterName = userInfo.me.username;
-          return draft;
-        })
-      );
-    }
+    // if (!loading) {
+    //   setCharacterList(
+    //     produce(draft => {
+    //       draft[0].characterName = userInfo.me.username;
+    //       return draft;
+    //     })
+    //   );
+    // }
   }, [loading, userInfo]);
 
   const _handleChangeAddress1 = (value, index) => {
-    setCharacterList(
-      produce(characterList, draft => {
-        draft[index] = {
-          ...draft[index],
-          characterAddress1: value
-        };
-        return draft;
-      })
-    );
+    // setCharacterList(
+    //   produce(characterList, draft => {
+    //     draft[index] = {
+    //       ...draft[index],
+    //       characterAddress1: value
+    //     };
+    //     return draft;
+    //   })
+    // );
   };
 
   const _handleChange = (e, index) => {
